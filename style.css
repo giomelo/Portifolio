@@ -1,0 +1,14 @@
+.header{
+  background-color: rgb(177, 175, 175);
+}
+
+.search_area{
+    margin-top: 10px;
+}
+
+.menu_area{
+    align-items: center;
+}
+.navbar-nav a{
+    margin-left: -10px;
+}

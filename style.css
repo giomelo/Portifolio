@@ -1,5 +1,10 @@
+body{
+    background-color: rgb(104, 104, 104);
+}
+
 .header{
   background-color: rgb(177, 175, 175);
+  align-items: center;
 }
 
 .search_area{
@@ -12,3 +17,45 @@
 .navbar-nav a{
     margin-left: -10px;
 }
+
+.footer{
+    text-align: center;
+    background-color: rgb(177, 175, 175);
+    height: 70px;
+}
+.footer_text{
+    margin-top: 20px;
+}
+
+.search{
+    background-color: rgb(177, 175, 175);
+    width: 100%;
+}
+
+.text_perfil{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.image_perfil{
+    padding: 10px;
+}
+img {
+    width: 100%;
+}
+
+.social_media_area a{
+    color: inherit;
+}
+
+.social_media_area a:hover{
+    color: rgb(59, 59, 59);
+}
+
+.icons_social i{
+    font-size: 20px;
+}
+
+.projetos_images{
+    display: inline;
+}
+

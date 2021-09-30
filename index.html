@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <title>Portifolio|Giovana Melo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ 
+    <script src="script.js"></script>
 </head>
 <body>
-    <header class="container header">
+    <header class="header">
         <div class="row">
             <div class="col-12 header_area">
                 <div class="row">
@@ -26,9 +32,10 @@
                           </nav>
                     </div>
                         <div class="col-4 col-sm-12 col-md-8 col-lg-4 search_area">
-                                <div class="container-fluid search">
-                                  <form  class="d-grid">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            
+                                <div class="container-fluid">
+                                  <form class="d-grid">
+                                    <input class="form-control me-2 search" type="search" placeholder=" Pesquisar">
                                   </form>
                                 </div>
                         </div>
@@ -40,11 +47,83 @@
     </header>
 
     <main>
+         <section class="container profile">
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4 image_perfil">
+                    <img src="img/pessoa.jpg" alt="">
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 text_perfil">
+                        <h1>Nome do perfil</h1>
+                        <p>lerns kdajnsjkadn wjdnakjdsnd jasiodjoiasd sidajoidsa sadlasjkd asdoijsdwdawd wad awd awd ad s
+                             asjdl sadsakd sdsaldksad sadk asdkjshd asdhksahd</p>
 
+                    <div class="social_media_area">
+                        <h2>Redes Sociais</h2>
+                        <div class="icons_social">
+                            <a href=""><i class="fa fa-facebook-square"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                        </div>
+                        </div>
+                       
+                </div>
+            </div>
+         </section>
+         
+         <section class="container projects">
+             <div class="row">
+                <div class="col-12 projetos">
+                    <h1>Projetos</h1>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown link
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                </div>
+             </div>
+               
+                <section class="row projetos_images">
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <img src="img/WhatsApp Image 2020-10-25 at 23.51.27.jpeg" alt="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <img src="img/WhatsApp Image 2020-10-25 at 23.51.27.jpeg" alt="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <img src="img/WhatsApp Image 2020-11-06 at 11.38.28.jpeg" alt="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <img src="img/WhatsApp Image 2020-11-06 at 11.38.28.jpeg" alt="">
+                        </div>
+                </section>
+         </section>
+
+         <section class="container experience">
+
+         </section>
+
+         <section class="row repositories">
+
+         </section>
+
+         <section class="row content_reco">
+
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="row">
+            <div class="col-12 footer_text"> 
+                Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b>
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>

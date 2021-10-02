@@ -41,6 +41,7 @@ body{
 }
 img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .social_media_area a{
@@ -57,5 +58,39 @@ img {
 
 .projetos_images{
     display: inline;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown{
+    position: absolute;
+    display: inline;
+    right: 0;
+    padding-right: 1em;
+}
+
+.projetos h1{
+    display: inline;
+}
+.projetos{
+    padding-bottom: 10px;
+}
+
+.btn_more{
+   
+   padding: 10px;
+}
+
+.experience img{
+    padding: 5px;
+}
+
+hr {
+	border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#dbdbdb;
+    height: 2.5px;
 }
 

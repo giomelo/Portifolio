@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
@@ -14,20 +14,26 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="row">
+    <header class="row header">
+        <div class="container">
+           
+          <input type="checkbox" id="menuToggle">
+          <label for="menuToggle" class="menu-icon">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times-circle"></i>
+          </label>
             <div class="col-12 header_area">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4 col-lg-8 menu_area">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="container-fluid">
-                                <div class="navbar-nav">
+                                <ul class="navbar-nav">
                                   <a class="nav-link active" aria-current="page" href="#">perfil |</a>
                                   <a class="nav-link" href="#">projetos |</a>
                                   <a class="nav-link" href="#">experiência |</a>
                                   <a class="nav-link" href="#">repositórios github |</a>
                                   <a class="nav-link" href="#">conteúdo</a>
-                                </div>
+                                </ul>
                             </div>
                           </nav>
                     </div>
@@ -38,8 +44,10 @@
                                     <input class="form-control me-2 search" type="search" placeholder=" Pesquisar">
                                   </form>
                                 </div>
+
                         </div>
-                </div>
+
+                       
             </div>
 
         </div>
@@ -79,14 +87,13 @@
                               Categoria
                             </a>                          
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Web Sites</a></li>
+                              <li><a class="dropdown-item" href="#">Arte Gráfica</a></li>
+                              <li><a class="dropdown-item" href="#">Podcast</a></li>
                             </ul>
                           </div>
                 </div>
             </div>
-             </div>
          </section>
         
          <div class="container projects">
@@ -107,12 +114,11 @@
                   <img src="img/WhatsApp Image 2020-11-06 at 11.38.28.jpeg" alt="">
                   <p>Projeto 4 - 2021</p>
                 </div>
-                <div class="btn_more">
-                  <button type="button" class="btn btn-secondary ">+ Carregar mais projetos</button>
-                </div>
+                
               </section>
-             
-              
+              <div class="btn_more">
+                <button type="button" class="btn btn-secondary ">+ Carregar mais projetos</button>
+              </div>
          </div>
          
 
@@ -181,45 +187,60 @@
                     <p><b>Atualizado em: 02/09/2020</b></p>
                   </div>
                 </div>
-                
+                <div class="btn_more">
+                  <button type="button" class="btn btn-secondary ">+ Carregar mais repositórios</button>
+                </div>
               </div>
 
             </di>
          </section>
 
          <section class="container content_reco">
-           <h1>Recomendação de conteúdo</h1>
+            <h1>Recomendação de conteúdo</h1>
           <div class="row videos_area">
-            <div class="col-4 col-sm-12 col-md-4 col-lg-4">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/rznECmgJj4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <div class="row text_videos">
-                <h4><b>Video: </b>Descrição</h4>
-                <p><b>Direitor: </b>Nome do Diretor</p>
-                <p><b>Roteiro: </b>Nome do Roterista</p> <p><b>Estreia: </b>2020</p> 
-               </div>
+              <h3><b>Vídeo: </b> Descrição</h3>
+              <span class="negrito">Diretor: </span>Jeff Fowler<br>
+              <span class="negrito">Roteiro: </span>Worm Miller 
+              <span class="negrito">Estreia: </span>2020
              </div>
-             <div class="col-4 col-sm-12 col-md-4 col-lg-4">
+             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/rznECmgJj4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h3><b>Vídeo: </b> Descrição</h3>
+              <span class="negrito">Diretor: </span>Jeff Fowler<br>
+              <span class="negrito">Roteiro: </span>Worm Miller 
+              <span class="negrito">Estreia: </span>2020
              </div>
-             <div class="col-4 col-sm-12 col-md-4 col-lg-4">
+             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/rznECmgJj4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h3><b>Vídeo: </b> Descrição</h3>
+              <span class="negrito">Diretor: </span>Jeff Fowler<br>
+              <span class="negrito">Roteiro: </span>Worm Miller 
+              <span class="negrito">Estreia: </span>2020
              </div>
-
             
           </div>
-         
-          <div class="row text_area">
-           
+          <div class="btn_more" id="last">
+            <button type="button" class="btn btn-secondary ">+ Carregar mais recomendações</button>
           </div>
+           
+          <hr>
         </section>
     </main>
-
-    <footer class="footer">
+    
+    <footer class="row footer">
+      <div class="container">
         <div class="row">
-            <div class="col-12 footer_text"> 
-                Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b>
-            </div>
-        </div>
+          <div class="col-10 col-sm-12 col-md-8 col-lg-10 footer_text"> 
+              Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC Minas</b>
+          </div>
+          <div class="col-2 col-md-4 col-lg-2 logo_area">
+            <img src="img/marca2.png" alt="logo">
+          </div>
+      </div>
+      
+      </div>
         
     </footer>
 

@@ -50,9 +50,23 @@ body {
 .image_perfil {
   padding: 10px;
 }
-img {
+img{
   width: 100%;
   border-radius: 15px;
+}
+.content_repo{
+    padding-top: 10px;
+}
+
+.content_repo img{
+    width: 15% !important;
+    display: inline-block;
+}
+.content_repo h2{
+    display: inline-block;
+}
+.content_repo p{
+    margin-left: 60px;
 }
 .social_media_area a {
   color: inherit;
@@ -175,14 +189,19 @@ iframe {
   }
   .repositories h1 {
     padding-left: 20px;
+    padding-bottom: 20px;
   }
 
   iframe {
     height: 300px;
   }
+  .content_repo img{
+    width: 10% !important;
+    display: inline-block;
+}
 }
 
-@media screen and (min-width: 601px) and (max-width: 980px) {
+@media screen and (min-width: 601px) and (max-width: 989px) {
   iframe {
     height: 300px;
   }
@@ -196,10 +215,21 @@ iframe {
   .search {
     text-align: right;
   }
+  .content_repo img{
+    width: 12% !important;
+    display: inline-block;
+}
+    .search_area{
+        padding-top: 3px;
+    }
+
+    .menu-icon{
+        padding-top: 5px;
+    }
 }
 
 @media screen and (max-width: 990px) {
-
+   
   #last {
     margin-top: -50px;
   }

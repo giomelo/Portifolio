@@ -44,6 +44,7 @@ window.onload = () =>
                         let repoSelected = obj2[index];
                         allRepoNames[i].querySelector('h2').innerHTML = repoSelected.name;
                         allRepoNames[i].querySelector('span').innerHTML = repoSelected.description;
+                        allRepoNames[i].querySelector('a').href = repoSelected.html_url;
                         obj2.splice(index,1);
                         console.log(obj2);
                     }

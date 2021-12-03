@@ -5,7 +5,7 @@
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-    <title>Portifolio|Giovana Melo</title>
+    <title>Portifolio|Home-Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,19 +32,20 @@
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="container-fluid">
                                 <ul class="navbar-nav">
-                                  <a class="nav-link active" aria-current="page" href="#">perfil |</a>
-                                  <a class="nav-link" href="#">projetos |</a>
-                                  <a class="nav-link" href="#">experiência |</a>
-                                  <a class="nav-link" href="#">repositórios github |</a>
-                                  <a class="nav-link" href="#">conteúdo</a>
+                                  <a class="nav-link active" aria-current="page" href="#perfil-name">perfil |</a>
+                                  <a class="nav-link" href="#projects">projetos |</a>
+                                  <a class="nav-link" href="#exp">experiência |</a>
+                                  <a class="nav-link" href="#repo">repositórios github |</a>
+                                  <a class="nav-link" href="#cont">conteúdo</a>
                                 </ul>
                             </div>
                           </nav>
                     </div>
                         <div class="col-4 col-sm-12 col-md-8 col-lg-4 search_area">
                                 <div class="container-fluid ">
-                                  <form class="d-grid">
-                                    <input class="form-control me-2 search" type="search" placeholder=" Pesquisar">
+                                  <form class="form-inline social_media_area">
+                                    <input id="txtPesquisa" class="form-control me-2 search" type="search" placeholder=" Pesquisar">
+                                    <a href="seach.html"><i id="icon_search" class="fa fa-search"></i></a>
                                   </form>
                                 </div>
 
@@ -72,9 +73,9 @@
                     <div class="social_media_area">
                         <h2>Redes Sociais</h2>
                         <div class="icons_social">
-                            <a href=""><i class="fa fa-facebook-square"></i></a>
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a target="blank" href=""><i class="fa fa-facebook-square"></i></a>
+                            <a target="blank" href=""><i class="fa fa-twitter"></i></a>
+                            <a target="blank" href=""><i class="fa fa-instagram"></i></a>
                             <a target="blank" href="https://github.com/giomelo"><i class="fa fa-github"></i></a>
                             
                         </div>
@@ -87,7 +88,7 @@
          <section class="container projects">
              <div class="row">
                 <div class="col-12 projetos">
-                  <h1>Projetos</h1>
+                  <h1 id="projects" >Projetos</h1>
                         <div class="dropdown">
                             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                               Categoria
@@ -129,7 +130,7 @@
          
 
          <section class="container experience">
-              <h1>Experiência</h1>
+              <h1 id="exp" >Experiência</h1>
               <div class="row">
               <div class="col-6 col-sm-6 col-md-4 col-lg-2">
                 <img src="img/edutec.jpg" alt="">
@@ -170,7 +171,7 @@
          <section class="row repositories">
               <div class="container">
                 <div class="row">
-                  <h1>Repositórios GitHub</h1>
+                  <h1 id="repo" >Repositórios GitHub</h1>
                 </div>
 
                 <div class="row content_repo">
@@ -202,7 +203,7 @@
          </section>
 
          <section class="container content_reco">
-            <h1>Recomendação de conteúdo</h1>
+            <h1 id="cont" >Recomendação de conteúdo</h1>
           <div class="row videos_area">
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ZP24Q8YtTi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

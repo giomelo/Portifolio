@@ -1,3 +1,8 @@
+
+#icon_search{
+  padding-left: 10px;
+}
+
 body {
   background-color: rgb(128, 123, 123);
 }
@@ -200,6 +205,11 @@ iframe {
     width: 10% !important;
     display: inline-block;
 }
+
+#menuToggle:not(checked) ~ ul {
+  height: 0%;
+  z-index: 0;
+}
 }
 
 @media screen and (min-width: 601px) and (max-width: 989px) {
@@ -227,6 +237,11 @@ iframe {
     .menu-icon{
         padding-top: 5px;
     }
+
+    #menuToggle:not(checked) ~ ul {
+      height: 0%;
+      z-index: 0;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -291,7 +306,7 @@ iframe {
     display: none;
   }
 
-  #menuToggle:checked ~ div  ul {
+  #menuToggle:checked ~ div ul {
       height: 100%;
       z-index: 998;
   }

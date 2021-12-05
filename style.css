@@ -1,8 +1,7 @@
-#icon_search {
-  cursor: pointer;
- }
+
 #icon_search{
   padding-left: 10px;
+  cursor: pointer;
 }
 
 body {

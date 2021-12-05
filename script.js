@@ -1,20 +1,25 @@
+
 window.onload = () =>
         {
-            function success () { 
+                function success () { 
                 let obj = JSON.parse(this.responseText);
-                console.log(JSON.parse(this.responseText)); 
+                //console.log(JSON.parse(this.responseText)); 
                 // alert(`Nome: ${obj.name} \nBiografia:${obj.bio}`);
-
+                
                 let bio = document.querySelector('#githubBio');
+                if(bio !=null)
                 bio.innerHTML = obj.bio;
 
                 let seguidores = document.querySelector('#seguidores');
+                if(seguidores != null)
                 seguidores.innerHTML = obj.followers;
 
                 let perfilName = document.querySelector('#perfil-name');
+                if(perfilName != null)
                 perfilName.innerHTML = obj.name;
                 
                 let perfilPhoto = document.querySelector('#perfil-photo');
+                if(perfilPhoto!=null)
                 perfilPhoto.src = obj.avatar_url;
                 }
                 function error (err) { console:log('Erro:', err); }
@@ -33,75 +38,66 @@ window.onload = () =>
 
                 function repos(){
                     let obj2 = JSON.parse(this.responseText);
-                    console.log(JSON.parse(this.responseText)); 
+                    //console.log(JSON.parse(this.responseText)); 
                     
                     let allRepoNames = document.querySelectorAll('div.content_repo > div');
-                    console.log(allRepoNames);
-
-                    for(i =0; i< allRepoNames.length; i++)
+                    //console.log(allRepoNames);
+                    if(allRepoNames != null)
                     {
-                        let index = Math.floor(Math.random() * obj2.length);
-                        let repoSelected = obj2[index];
-                        allRepoNames[i].querySelector('h2').innerHTML = repoSelected.name;
-                        allRepoNames[i].querySelector('span.description').innerHTML = repoSelected.description;
-                        let data = new Date(repoSelected.updated_at);
-                        allRepoNames[i].querySelector('span.date').innerHTML = data.toLocaleDateString();
-                        allRepoNames[i].querySelector('a').href = repoSelected.html_url;
-                        obj2.splice(index,1);
-                        console.log(obj2);
-                    }
-                    
-                }
-
-                function error (err) { 
-                    console:log('Erro:', err);
-                    let divtela = document.getElementById('tela');
-                    divtela.innerHTML = "Resultado não encontrado :(";
-                }
-                
-                function executaPesquisa ()
-                {
-
-                    const queryString = 'q=' + encodeURIComponent('GitHub Octocat in:readme user:defunkt');
-                    let query = document.getElementById('txtPesquisa').value;
-                    alert(query);
-                    let xhr2 = new XMLHttpRequest(); 
-                    xhr2.onload = exibeResultado;
-                    xhr2.onerror = error;
-                    xhr2.open ('GET', `https://api.github.com/search/repositories?q=${query}{&page,per_page,sort,order}`);
-                    xhr2.send();
-
-                }
-
-                function exibeResultado()
-                    {
-                        let resu = JSON.parse(this.responseText);
-                        console.log(JSON.parse(this.responseText)); 
-                        let divtela = document.getElementById('tela');
-                        let texto = '';
+                        for(i =0; i< allRepoNames.length; i++)
+                        {
+                            let index = Math.floor(Math.random() * obj2.length);
+                            let repoSelected = obj2[index];
+                            allRepoNames[i].querySelector('h2').innerHTML = repoSelected.name;
+                            allRepoNames[i].querySelector('span.description').innerHTML = repoSelected.description;
+                            let data = new Date(repoSelected.updated_at);
+                            allRepoNames[i].querySelector('span.date').innerHTML = data.toLocaleDateString();
+                            allRepoNames[i].querySelector('a').href = repoSelected.html_url;
+                            obj2.splice(index,1);
+                            //console.log(obj2);
+                        }
                         
-                        // //Montar texto html das noticias
-                        let dados = JSON.parse(this.responseText);
-
-                        for(i = 0; i< dados.articles.length; i++){
-                            let noticia = dados.articles[i];
-                            let data = new Date(noticia.publishedAt);
-                            texto = texto + `
-                            <div class="box-noticia">
-                            <img src="${noticia.urlToImage}" alt="">
-                            <span class="titulo">${noticia.title}</span><br>
-                            <span class="creditos">${data.toLocaleDateString ()} - ${noticia.source.name} - ${noticia.author}</span><br>
-                            <span class="text">
-                            ${noticia.content}
-                            </span><br>
-                            <a href="${noticia.url}">Leia mais ...</a>
-                        </div>
-                            `;
-                        };
-                        // preencher a div com o texto html
-
-                        divtela.innerHTML = texto;
+                    }   
+                   
                 }
+                document.getElementById('icon_search').addEventListener('click', executaPesquisa);
+        }
+        
+       
 
-                document.getElementById('icon_search').onclick = executaPesquisa();
+        function error (err) { 
+            console:log('Erro:', err);
+            let divtela = document.getElementById('tela');
+            divtela.innerHTML = "Resultado não encontrado :(";
+        }
+
+        function executaPesquisa() 
+        {
+            // let xhr = new XMLHttpRequest(); 
+            let query = document.getElementById('txtPesquisa').value;
+            
+            console.log(query);
+            var originalName = query.split(' ').join('');
+            console.log(originalName);
+            if(originalName != ""){
+                fetch("https://api.github.com/users/" + originalName)
+                .then((result) => result.json())
+                .then((data) =>{
+                    console.log(data);
+                    if(data != null)
+                    {
+                        sessionStorage.setItem('avatar', data.avatar_url );
+                        sessionStorage.setItem('name', data.name );
+                        sessionStorage.setItem('repo', data.public_repos );
+                        sessionStorage.setItem('bio', data.bio );
+                        sessionStorage.setItem('url', data.html_url );
+                        sessionStorage.setItem('data', data);
+                        window.location.href = "search.html";
+                    }else{
+                        alert('Resultado não encontrado');
+                    }
+                })
+            
+            }
+          
         }

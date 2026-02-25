@@ -15,11 +15,11 @@
 
 .languageSelector-home {
     align-self: flex-end;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .left-home {
-    margin-top: 60px;
+    margin-top: 58px;
 }
 
 .text-profissional-home {
@@ -32,24 +32,24 @@
 .text-name-home {
     color: var(--font-primary);
     font-family: 'Handjet', 'Times New Roman', Times, serif;
-    font-size: 48px;
+    font-size: 46px;
     margin-top: 12px;
     margin-bottom: 5px;
     font-weight: 600;
 }
 
 .text-profile-home {
-    font-size: 24px;
+    font-size: 22px;
     text-align: justify;
-    width: 700px;
+    width: 500px;
     color: var(--font-secondary);
 }
 
 .text-profile-home-extra {
-    font-size: 16px;
+    font-size: 22px;
     text-align: justify;
     font-weight: 600;
-    width: 700px;
+    width: 500px;
     color: var(--font-extra);
 }
 
@@ -97,25 +97,25 @@
     }
 
     .text-profissional-home {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: 600;
         margin: 0px;
     }
 
     .text-name-home {
-        font-size: 38px;
+        font-size: 46px;
         margin-top: 12px;
         margin-bottom: 5px;
         font-weight: 600;
     }
 
     .text-profile-home {
-        font-size: 18px;
-        width: 500px;
+        font-size: 22px;
+        width: 620px;
     }
 
     .text-profile-home-extra {
-        font-size: 16px;
+        font-size: 22px;
         text-align: justify;
         font-weight: 600;
         width: 500px;

@@ -1,51 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import useTexts from '../../hooks/useTexts';
+import { motion } from "framer-motion";
+import { useEffect } from "react";
+
 import './LoadingAnimated.css';
 
+import imageLoader from '../../assets/img/image-loading.png'; 
+
 const LoadingAnimated = ({ onFinish }) => {
-  const texts = useTexts();
-  const [progress, setProgress] = useState(0);
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setTimeout(() => {
-            if (onFinish) onFinish();
-          }, 500);
-          return 100;
-        }
-        return prev + 1;
-      });
-    }, 30); //Ajuste de velocidade
-
-    return () => clearInterval(interval);
+    const timer = setTimeout(() => {
+      onFinish();
+    }, 2800);
+    return () => clearTimeout(timer);
   }, [onFinish]);
 
   return (
-    <div className="loading-container">
-      <div className="scanline"></div>
-      
-      <div className="loading-content">
-        <h1 className="loading-title">{texts.Title_Loading}</h1>
-        
-        <div className="progress-wrapper">
-          <div className="progress-bar-container">
-            <div 
-              className="progress-bar-fill" 
-              style={{ width: `${progress}%` }}
-            ></div>
-          </div>
-          <span className="progress-number">{progress}%</span>
-        </div>
-
-        <div className="loading-footer">
-          <p className="glitch-text">{texts.Text_Loading}</p>
-          <div className="spinner"></div>
-        </div>
+    <motion.div
+      className="loading-home"
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 0 }}
+      transition={{ delay: 2.6, duration: 0.4, ease: "easeOut" }}
+    >
+      <div className="loading-image-container">
+        <img
+          src={imageLoader}
+          alt="Loading"
+          className="image-rotate"
+        />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import useTexts from '../../hooks/useTexts';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const texts = useTexts();
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [scrolled, setScrolled] = useState(false);
-    const isPortfolioPage = window.location.pathname === '/portifolio';
+
+    const currentPath = location.pathname.replace(/\/$/, "").toLowerCase();
+    const isPortfolioPage = currentPath === '' || currentPath === '/' || currentPath === '/portifolio';
 
     //Lida com resize da tela
     useEffect(() => {
@@ -21,17 +24,18 @@ const Header = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    //Lida com scroll da página
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 10);
+            setScrolled(window.scrollY > 50);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const handleNavigation = (section) => {
-        const isOnHome = window.location.pathname === '/portifolio';
+        const pathCheck = window.location.pathname.replace(/\/$/, "").toLowerCase();
+        const isOnHome = pathCheck === '' || pathCheck === '/' || pathCheck === '/portifolio';
+        
         if (isOnHome) {
             scrollToSection(section);
         } else {
@@ -46,12 +50,15 @@ const Header = () => {
             contact: 'contact',
         };
         const el = document.getElementById(sectionMap[section]);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
+        if (el) {
+            setMenuOpen(false);
+            el.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     return (
         <header className={`header ${!isPortfolioPage ? 'header-solid' : (scrolled ? 'scrolled' : '')}`}>
-            <a href="/portifolio" className="header-logo">GIOMELO</a>
+            <a href="/portifolio" className="header-logo">Giomelo</a>
 
             {isMobile ? (
                 <>
@@ -64,7 +71,7 @@ const Header = () => {
                                 <button className="nav-option" onClick={() => handleNavigation('about')}>
                                     {texts.About_Header}
                                 </button>
-                                <Link to="/projects">
+                                <Link to="/projects" onClick={() => setMenuOpen(false)}>
                                     <button className="nav-option">
                                         {texts.Project_Header}
                                     </button>

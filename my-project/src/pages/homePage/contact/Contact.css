@@ -45,7 +45,7 @@
 
 .text-logo-contact {
     font-size: 28px;
-    color: var(--font-primary);
+    color: var(--font-title-contact);
     margin-bottom: 5px;
 }
 
@@ -63,7 +63,7 @@
 
 .text-info-contact {
     margin: 0px;
-    color: var(--font-title-contact);
+    color: var(--font-primary);
     font-family: 'Roboto', sans-serif;
 }
 

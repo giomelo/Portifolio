@@ -23,7 +23,7 @@ function HeaderWrapper() {
 function App() {
   const [loading, setLoading] = useState(true);
 
-  const basename = process.env.REACT_APP_NODE_ENV === "production" ? "/portfolio" : "/";
+  const basename = process.env.REACT_APP_NODE_ENV === "production" ? "/portifolio" : "/";
 
   return (
     <Router basename={basename}>

@@ -9,7 +9,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [scrolled, setScrolled] = useState(false);
-    const isPortfolioPage = window.location.pathname === '/portfolio';
+    const isPortfolioPage = window.location.pathname === '/portifolio';
 
     //Lida com resize da tela
     useEffect(() => {
@@ -31,7 +31,7 @@ const Header = () => {
     }, []);
 
     const handleNavigation = (section) => {
-        const isOnHome = window.location.pathname === '/portfolio';
+        const isOnHome = window.location.pathname === '/portifolio';
         if (isOnHome) {
             scrollToSection(section);
         } else {
@@ -51,7 +51,7 @@ const Header = () => {
 
     return (
         <header className={`header ${!isPortfolioPage ? 'header-solid' : (scrolled ? 'scrolled' : '')}`}>
-            <a href="/portfolio" className="header-logo">GIOMELO</a>
+            <a href="/portifolio" className="header-logo">GIOMELO</a>
 
             {isMobile ? (
                 <>

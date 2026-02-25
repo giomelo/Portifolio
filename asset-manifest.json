@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.0be4f6f7.css",
-    "main.js": "/portifolio/static/js/main.56cdbb5b.js",
+    "main.css": "/portifolio/static/css/main.f5257440.css",
+    "main.js": "/portifolio/static/js/main.cca355a5.js",
     "static/js/453.0a36081d.chunk.js": "/portifolio/static/js/453.0a36081d.chunk.js",
     "static/media/diveb.png": "/portifolio/static/media/diveb.d648a9a5b88366463588.png",
     "static/media/timBlackFriday.png": "/portifolio/static/media/timBlackFriday.ccefa3351a30674aecee.png",
@@ -18,6 +18,7 @@
     "static/media/MonsterDelivery.png": "/portifolio/static/media/MonsterDelivery.a052c5a6bac4496f281a.png",
     "static/media/fonteOuro.jpg": "/portifolio/static/media/fonteOuro.16dc5d531e2a97dd93a1.jpg",
     "static/media/BroccolisAscension.png": "/portifolio/static/media/BroccolisAscension.5622013c8eb61cf74fd5.png",
+    "static/media/image-loading.png": "/portifolio/static/media/image-loading.1401a05d1ca414d9401a.png",
     "static/media/transitolegal.webp": "/portifolio/static/media/transitolegal.4ed3660b13bd1f8e2dcf.webp",
     "static/media/linkedin-footer.svg": "/portifolio/static/media/linkedin-footer.bfbc684db8c924a726e460e2b0897489.svg",
     "static/media/linkedin.svg": "/portifolio/static/media/linkedin.1e1954666d28adeeb5b7bac9dc0b4abe.svg",
@@ -42,12 +43,12 @@
     "index.html": "/portifolio/index.html",
     "static/media/link.svg": "/portifolio/static/media/link.e66844692d3b715a43eafc9cf7e5104f.svg",
     "static/media/copy.svg": "/portifolio/static/media/copy.5c799346cd090b48a51dd8af2c1c1c5a.svg",
-    "main.0be4f6f7.css.map": "/portifolio/static/css/main.0be4f6f7.css.map",
-    "main.56cdbb5b.js.map": "/portifolio/static/js/main.56cdbb5b.js.map",
+    "main.f5257440.css.map": "/portifolio/static/css/main.f5257440.css.map",
+    "main.cca355a5.js.map": "/portifolio/static/js/main.cca355a5.js.map",
     "453.0a36081d.chunk.js.map": "/portifolio/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0be4f6f7.css",
-    "static/js/main.56cdbb5b.js"
+    "static/css/main.f5257440.css",
+    "static/js/main.cca355a5.js"
   ]
 }

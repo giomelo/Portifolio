@@ -1,0 +1,224 @@
+.section-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 3rem 5rem;
+}
+
+.panel-home {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+}
+
+.languageSelector-home {
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.left-home {
+    margin-top: 60px;
+}
+
+.text-profissional-home {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0px;
+    color: var(--color-secondary);
+}
+
+.text-name-home {
+    color: var(--font-primary);
+    font-family: 'Handjet', 'Times New Roman', Times, serif;
+    font-size: 48px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.text-profile-home {
+    font-size: 24px;
+    text-align: justify;
+    width: 700px;
+    color: var(--font-secondary);
+}
+
+.text-profile-home-extra {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 600;
+    width: 700px;
+    color: var(--font-extra);
+}
+
+.buttons-home {
+    display: flex;
+}
+
+.redeSocial-home {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.right-home {
+    display: flex;
+}
+
+.image-home {
+    margin-top: 50px;
+    width: 500px;
+}
+
+.foreground-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Telas entre 1300px e 1900px */
+@media (max-width: 1900px) and (min-width: 1301px) {
+    .section-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 3rem 5rem;
+    }
+
+    .panel-home {
+        display: flex;
+        justify-content: space-between;
+        gap: 110px;
+        width: 100%;
+    }
+
+    .text-profissional-home {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    .text-name-home {
+        font-size: 38px;
+        margin-top: 12px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .text-profile-home {
+        font-size: 18px;
+        width: 500px;
+    }
+
+    .text-profile-home-extra {
+        font-size: 16px;
+        text-align: justify;
+        font-weight: 600;
+        width: 500px;
+    }
+
+    .buttons-home {
+        display: flex;
+    }
+
+    .redeSocial-home {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 15px;
+    }
+}
+
+/* Telas entre 768px e 1300px*/
+@media (max-width: 1300px) and (min-width: 769px) {
+    .section-home {
+        padding: 3rem 1.5rem;
+    }
+    
+    .panel-home {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+    }
+    
+    .text-profissional-home {
+        font-size: 24px;
+        width: auto;
+    }
+
+    .text-name-home {
+        font-size: 22px;
+        margin-top: 12px;
+    }
+
+    .text-profile-home {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .text-profile-home-extra {
+        font-size: 15px;
+        width: 80%;
+    }
+}
+
+/* Estilos para Mobile */
+@media (max-width: 768px) {
+
+    .section-home {
+        padding: 3rem 1.5rem;
+    }
+    
+    .panel-home {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 0px;
+        
+    }
+
+    .left-home {
+        margin: 0;
+    }
+    
+    .text-profissional-home {
+        font-size: 22px;
+        width: auto;
+    }
+
+    .text-name-home {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .text-profile-home {
+        font-size: 18px;
+        width: auto;
+    }
+
+    .text-profile-home-extra {
+        font-size: 16px;
+        width: auto;
+        font-weight: bold;
+    }
+    
+    .image-home {
+        position: relative;
+        width: 250px;
+        margin: 0;
+    }
+    
+    .foreground-image {
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 180px;
+        height: auto;
+    }
+}

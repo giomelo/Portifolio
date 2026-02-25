@@ -1,0 +1,198 @@
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 1rem 5rem;
+}
+
+.header-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.header-title-about {
+    color: var(--font-titleHeader);
+    font-size: 28px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-divider-about {
+    background-color: var(--background-secondary);
+    width: 30px;
+    height: 6px;
+    margin: 5px 0px;
+    border-radius: 62px;
+}
+
+.panel-about {
+    display: flex;
+    gap: 2.5rem;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: monospace;
+    color: var(--font-secondary);
+}
+
+.left-panel-about {
+    flex: 0 0 400px;
+}
+
+.image-about {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: var(--background-primary);
+    object-fit: cover;
+}
+
+.right-panel-about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-about p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+    text-align: justify;
+}
+
+.text-about p:last-child {
+    margin-bottom: 0;
+}
+
+.text-extra-about {
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.divider-about {
+    border-top: 1px solid var(--font-secondary);
+    margin: 1rem 0;
+}
+
+.achievement-about div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.achievement-about div > p{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.achievement-icon-about {
+    width: 20px;
+    height: 20px;
+}
+
+.skills-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.skill-tag {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Telas entre 1300px e 1900px */
+@media (max-width: 1900px) and (min-width: 1301px) {
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 1rem 5rem;
+    }
+
+}
+
+/* Telas entre 768px e 1300px*/
+@media (max-width: 1300px) and (min-width: 769px) {
+    .section-about {
+        padding: 2rem 1.5rem;
+    }
+
+    .header-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .panel-about {
+        gap: 2rem;
+        padding: 0;
+        max-width: 1100px;
+        margin-top: 2rem;
+    }
+
+    .left-panel-about {
+        flex: 0 0 400px;
+    }
+
+    .image-about {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: var(--background-primary);
+        object-fit: cover;
+    }
+}
+
+/* Estilos para Mobile */
+@media (max-width: 768px) {
+
+    .section-about {
+        padding: 2rem 1.5rem;
+    }
+
+    .header-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .panel-about {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        max-width: 1100px;
+        margin-top: 2rem;
+    }
+
+    .left-panel-about {
+        flex: 0 0 400px;
+    }
+
+    .image-about {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: var(--background-primary);
+        object-fit: cover;
+    }
+
+    .skills-about {
+        justify-content: center;
+    }
+    
+}

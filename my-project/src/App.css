@@ -1,0 +1,27 @@
+body {
+  font-family: 'Inconsolata', monospace;
+  background-color: var(--background-primary);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.fade-in-content {
+  animation: fadeInContainer 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fadeInContainer {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

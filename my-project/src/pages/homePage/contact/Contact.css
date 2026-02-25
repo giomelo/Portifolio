@@ -1,0 +1,319 @@
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 1rem 5rem;
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleHeader-contact {
+    color: var(--font-titleHeader);
+    font-size: 28px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-divider-contact {
+    background-color: var(--font-title-contact);
+    width: 30px;
+    height: 6px;
+    margin: 5px 0px;
+    border-radius: 62px;
+}
+
+.panel-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.left-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-top: -50px;
+}
+
+.text-logo-contact {
+    font-size: 28px;
+    color: var(--font-primary);
+    margin-bottom: 5px;
+}
+
+.panel-info-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-email-contact {
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.text-info-contact {
+    margin: 0px;
+    color: var(--font-title-contact);
+    font-family: 'Roboto', sans-serif;
+}
+
+.divider-contact {
+    background-color: var(--font-primary);
+    width: 20px;
+    height: 2px;
+    margin: 10px 0px;
+}
+
+.redeSocial-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.right-contact {
+    margin: 0;
+}
+
+.copy-button-contact {
+    background-color: transparent;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.copy-button-contact > img {
+    width: 15px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 300px;
+    background-color: transparent;
+    border: solid 4px;
+    border-color: var(--color-secondary);
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.title-form {
+    color: var(--font-form-contact);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+.contact-form button {
+    background-color: transparent;
+    color: var(--color-secondary);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: 2px solid;
+    border-color: var(--color-secondary);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px;
+}
+  
+.contact-form button:hover {
+    background-color: var(--color-secondary);
+    color: var(--background-primary);
+}
+
+.contact-form button:active {
+    background-color: var(--color-secondary);
+    color: var(--background-primary);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+  
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px 0px 6px 0px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid var(--font-form-contact);
+    background-color: transparent;
+    color: var(--font-form-contact);
+    outline: none;
+    transition: border-color 0.3s;
+    border-radius: 0;
+}
+  
+.input-group textarea {
+    min-height: 80px;
+    resize: vertical;
+    line-height: 1.4;
+}
+  
+.input-group label {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    font-size: 1rem;
+    color: var(--font-form-contact);
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 0px;
+    font-size: 0.75rem;
+    color: var(--font-form-contact);
+    background-color: var(--color-primary);
+    padding: 0 4px;
+    z-index: 1;
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown),
+.input-group textarea:focus,
+.input-group textarea:not(:placeholder-shown) {
+  border-bottom-color: var(--color-secondary);
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+  
+.send-status {
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .section-contact {
+        padding: 2rem 1.5rem;
+    }
+    
+    .panel-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .left-contact {
+        margin-top: 20px;
+    }
+
+    .contact-form {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        width: 260px;
+        border: solid 4px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+
+    .title-form {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .contact-form label {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .contact-form button {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        border: 2px solid;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        height: 50px;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 14px 0px 6px 0px;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 2px solid var(--font-form-contact);
+        background-color: transparent;
+        outline: none;
+        transition: border-color 0.3s;
+        border-radius: 0;
+    }
+    
+    .input-group textarea {
+        min-height: 80px;
+        resize: vertical;
+        line-height: 1.4;
+    }
+    
+    .input-group label {
+        position: absolute;
+        top: 14px;
+        left: 0px;
+        font-size: 1rem;
+        pointer-events: none;
+        transition: 0.2s ease all;
+    }
+
+    .input-group input:focus + label,
+    .input-group textarea:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+        top: -10px;
+        left: 0px;
+        font-size: 0.75rem;
+        padding: 0 4px;
+        z-index: 1;
+    }
+
+    .form-actions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .send-status {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,71 @@
+/* Espaço para variaveis de cores */
+
+:root {
+    --background-primary: var(--color-primary);
+    --background-secondary: var(--color-secondary);
+    --background-footer: #6c9c3c;
+    --background-panel-experience: var(--background-primary);
+
+    /* Cores da palheta */
+    --color-primary: #05120B;
+    --color-secondary: #6c9c3c;
+    --color-extra: #c6bebe;
+    --color-spare: #2F4858;
+
+    /* Cores dos Botões Custom */
+    --color-button-solidHeader: #C6BEBE;
+    --color-button-scrolledHeader: #05120B;
+    --color-hoverButton-solidHeader: #dadada;
+    --color-hoverButton-scrolledHeader: #05120bd8;
+    --color-buttonScroll: #dadada;
+    --color-buttonScroll-arrow: #05120B;
+
+    /* Componente de Project Card - Intro */
+    --background-projectCard: #2A2A2A;
+    --color-title-projectCard: #5F8B36;
+    --color-link-projectCard: #5F8B36;
+    --color-category-projectCard: #A8A8A8;
+    --color-description-projectCard: #FFF;
+
+    /* Componente de Idioma */
+    --border-selectedLanguage: #C6BEBE;
+    --color-selectedLanguage: #C6BEBE;
+    --background-dropdownMenu-selectedLanguage: #C6BEBE;
+    --color-dropdownMenu-selectedLanguage: #05120B;
+
+    /* Componente de Loading */
+    --color-text-loading: #6c9c3c;
+    --background-text-loading: #05120B;
+
+
+
+    /* Cores das fontes */
+    --font-primary: #C6BEBE;
+    --font-secondary: #838583;
+    --font-extra: #636363;
+    --font-black: #000;
+
+    /* Cores Textos */
+    --font-titleHeader: #C6BEBE;
+
+    /* HEADER */
+    --font-logo-header: #C6BEBE;
+    --font-option-header: #C6BEBE;
+
+    /* EXPERIENCIA */
+    --font-title-experience: #C6BEBE;
+    --font-company-experience: #838583;
+    --font-subtext-experience: #636363;
+
+
+    /* CONTATO */
+    --font-title-contact: var(--background-secondary);
+    --font-form-contact: #C6BEBE;
+
+    /* FOOTER */
+    --font-title-footer: #05120B;
+    --font-subtitle-footer: #05120B;
+    --font-text-footer: #05120B;
+    --font-link-footer: #05120B;
+    --font-link-hover-footer: #05120bb6;
+}

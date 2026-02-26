@@ -15,7 +15,7 @@ import iconCopy from '../../../assets/icon/copy.svg'
 const Contact = () => {
     const texts = useTexts();
 
-    const email = "user@email.com";
+    const email = "giovanamelomr@gmail.com";
 
     const handleCopyEmail = () => {
         navigator.clipboard.writeText(email);
@@ -42,7 +42,8 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_34o0q7k', 'template_phhcilc', e.target, 'iTui_adLJgqZx6LGa')
+            // modelo => ('service', 'template', e.target, 'key')
+            .sendForm('', '', e.target, '')
             .then((result) => {
                 console.log('Email enviado com sucesso:', result.text);
                 setSendStatus('Mensagem Enviada');

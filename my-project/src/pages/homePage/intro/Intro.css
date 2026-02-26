@@ -27,6 +27,7 @@
     font-weight: 600;
     margin: 0px;
     color: var(--color-secondary);
+    text-transform: uppercase;
 }
 
 .text-name-home {

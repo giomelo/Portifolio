@@ -189,7 +189,7 @@
     top: -10px;
     left: 0px;
     font-size: 0.75rem;
-    color: var(--font-form-contact);
+    color: var(--color-secondary);
     background-color: var(--color-primary);
     padding: 0 4px;
     z-index: 1;

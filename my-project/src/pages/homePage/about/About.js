@@ -37,9 +37,9 @@ const About = () => {
                         <div className="skills-about">
                             <span className="skill-tag">C#</span>
                             <span className="skill-tag">Unity</span>
-                            <span className="skill-tag">Construct</span>
                             <span className="skill-tag">Game Developer</span>
                             <span className="skill-tag">Mobile</span>
+                            <span className="skill-tag">XR - AR</span>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import './Footer.css';
 
 import useTexts from '../../hooks/useTexts';
-import ButtonSocial from '../buttons/redeSocial/ButtonSocial';
+import ButtonSocial from '../buttons/socialFooter/ButtonSocialFooter';
 
 import iconGithub from '../../assets/icon/footer/github-footer.svg';
 import iconItchio from '../../assets/icon/footer/itchio-footer.svg';

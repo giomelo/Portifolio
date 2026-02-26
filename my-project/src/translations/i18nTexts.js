@@ -4,9 +4,9 @@ const i18nTexts = {
         Project_Header: 'Projetos',
         Contact_Header: 'Contato',
 
-        TextProfession_Intro: 'GAME DEVELOPER',
+        TextProfession_Intro: 'Unity Programmer',
         TextPresentation_Intro: 'Olá, me chamo Giovana Melo',
-        TextProfile_Intro: 'Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.',
+        TextProfile_Intro: 'Sou desenvolvedora Unity a mais de 5 anos, com experiência em jogos para PC, Mobile, Web, XR e AR. Me interesso principalmente por desenvolver ferramentas e sistemas, sempre buscando atingir códigos limpos e escaláveis.',
         TextButtonCurriculum_Intro: 'Curriculo',
 
         Section_Project: 'Projetos',
@@ -16,8 +16,8 @@ const i18nTexts = {
         Button_View_Project: 'Ver Mais',
 
         Section_About: 'Sobre Mim',
-        TextProfile_01_About: 'Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.',
-        TextProfile_extra_About: 'Meu diferencial Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.',
+        TextProfile_01_About: 'Sou formada em Jogos Digitais pela PUC Minas e desde pequena sou apaixonada pela criação de jogos, toda a psicologia envolvida e inteligência artificial. Já atuei em diversos tipos jogos e projetos, desde a prototipagem até a finalização, com maior experiência em jogos sérios e simulações. Meu foco é na programação dede sistemas de gameplay e ferramentas, com o intuito de facilitar tarefas mais repetitivas e trabalhosas.',
+        TextProfile_extra_About: 'Meu diferencial é gostar muito de desafios novos, de estudar e estar sempre buscando conhecimento para me atualizar e melhorar minhas habilidades.',
         Achievement_01_About: 'Bacharelado em Jogos Digitais - PUC Minas',
 
 
@@ -61,11 +61,11 @@ const i18nTexts = {
         ButtonSendForm_Contact: 'Enviar',
         ResponseSendForm_Contact: 'Mensagem Enviada',
         NameLogoContact: 'Giomelo',
-        TelephoneLogoContact: '+55 (00) 0000-0000',
+        TelephoneLogoContact: '+55 (31)98211-9063',
         CopyEmailContact: 'Copiar Email',
 
         TitlePage_Footer: 'GIOMELO',
-        SubtitlePage_Footer: 'Gamer Developer',
+        SubtitlePage_Footer: 'Unity Programmer',
         SocialPage_Footer: 'SOCIAL',
         Created_Footer: 'Desenvolvido por',
 
@@ -74,29 +74,27 @@ const i18nTexts = {
         Game_Projects: 'Jogos',
         GameText_Projects: 'Clique no jogo para saber mais',
 
-        Title_Loading: 'Inicializando Sistema',
-        Text_Loading: 'Estabelecendo Conexão...',
     },
     'en-US': {
         About_Header: 'About',
         Project_Header: 'Projects',
         Contact_Header: 'Contact',
 
-        TextProfession_Intro: 'GAME DEVELOPER',
-        TextPresentation_Intro: 'Hi, I am Giovana Melo',
-        TextProfile_Intro: 'Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.',
+        TextProfession_Intro: 'Unity Programmer',
+        TextPresentation_Intro: 'Hello, my name is Giovana Melo',
+        TextProfile_Intro: 'I have been a Unity developer for over 5 years, with experience in PC, Mobile, Web, XR, and AR games. I am mainly interested in developing tools and systems, always striving to achieve clean and scalable code.',
         TextButtonCurriculum_Intro: 'Resume',
 
         Section_Project: 'Projects',
-        Description_Solis_Project: 'Solis is an exciting cooperative platformer and puzzle game for two players.',
-        Description_Broccoli_Project: "Broccoli's Ascension is an adventure about a broccoli during its germination period.",
-        Description_MonsterDelivery_Project: 'Play as two monster siblings delivering packages to their respective colorful homes.',
+        Description_Solis_Project: 'Solis is an exciting cooperative platform and puzzle game for two players.',
+        Description_Broccoli_Project: "Broccoli's Ascension is an adventure of a broccoli in its germination period.",
+        Description_MonsterDelivery_Project: 'Play as two monster siblings delivering packages to their respective colorful houses.',
         Button_View_Project: 'View More',
 
         Section_About: 'About Me',
-        TextProfile_01_About: 'Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.',
-        TextProfile_extra_About: 'My edge: Lorem ipsum dolor sit amet. Ea corrupti odio qui ipsum eius ut quis veniam aut expedita maxime qui quasi similique et aliquam sunt.',
-        Achievement_01_About: "Bachelor's Degree in Digital Games - PUC Minas",
+        TextProfile_01_About: 'I have a degree in Digital Games from PUC Minas and since I was little I have been passionate about game creation, all the psychology involved, and artificial intelligence. I have worked on various types of games and projects, from prototyping to finalization, with greater experience in serious games and simulations. My focus is on programming gameplay systems and tools, with the aim of facilitating more repetitive and laborious tasks.',
+        TextProfile_extra_About: 'What sets me apart is that I really enjoy new challenges, studying, and constantly seeking knowledge to update myself and improve my skills.',
+        Achievement_01_About: 'Bachelor in Digital Games - PUC Minas',
 
         Section_Experience: 'Experience',
 
@@ -104,7 +102,7 @@ const i18nTexts = {
         Title_01_Experience: 'Unity Developer',
         Company_01_Experience: 'RD3 Digital',
         Type_01_Experience: 'Full-time',
-        Dates_01_Experience: 'May 2024 - Present',
+        Dates_01_Experience: 'May 2024 - present',
         Location_01_Experience: 'Remote',
 
         // -- Experience 02 --
@@ -127,8 +125,7 @@ const i18nTexts = {
         Type_04_Experience: 'Internship',
         Dates_04_Experience: 'Mar 2021 - Sep 2022',
         Location_04_Experience: 'Belo Horizonte, Minas Gerais - Brazil',
-        
-
+       
         TitlePage_Contact: 'Contact',
         TitleForm_Contact: 'Get in Touch',
         NameForm_Contact: 'Name',
@@ -138,11 +135,11 @@ const i18nTexts = {
         ButtonSendForm_Contact: 'Send',
         ResponseSendForm_Contact: 'Message Sent',
         NameLogoContact: 'Giomelo',
-        TelephoneLogoContact: '+55 (00) 0000-0000',
+        TelephoneLogoContact: '+55 (31)98211-9063',
         CopyEmailContact: 'Copy Email',
 
         TitlePage_Footer: 'GIOMELO',
-        SubtitlePage_Footer: 'Game Developer',
+        SubtitlePage_Footer: 'Unity Programmer',
         SocialPage_Footer: 'SOCIAL',
         Created_Footer: 'Developed by',
 
@@ -151,8 +148,6 @@ const i18nTexts = {
         Game_Projects: 'Games',
         GameText_Projects: 'Click on the game to learn more',
 
-        Title_Loading: 'Initializing System',
-        Text_Loading: 'Establishing Connection...',
     },
 };
   

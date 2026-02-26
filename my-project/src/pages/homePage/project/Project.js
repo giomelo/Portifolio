@@ -1,9 +1,9 @@
 import './Project.css';
 import useTexts from '../../../hooks/useTexts';
 
-import imageSolis from '../../../assets/img/project/novos/Solis.png';
-import imageBroccolis from '../../../assets/img/project/novos/BroccolisAscension.png';
-import imageMonsterDelivery from '../../../assets/img/project/novos/MonsterDelivery.png';
+import imageSolis from '../../../assets/img/project/Solis.png';
+import imageBroccolis from '../../../assets/img/project/BroccolisAscension.png';
+import imageMonsterDelivery from '../../../assets/img/project/MonsterDelivery.png';
 import iconWin from '../../../assets/icon/win.svg';
 import iconLinux from '../../../assets/icon/linux.svg';
 import iconAndroid from '../../../assets/icon/android.svg';

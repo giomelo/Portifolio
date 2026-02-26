@@ -7,40 +7,23 @@ import Footer from "../../components/footer/Footer";
 
 import imageIntroducion from '../../assets/img/project/introducion.png';
 
-import iconLink from '../../assets/icon/link.svg';
+// import iconLink from '../../assets/icon/link.svg';
 
 // Imagem dos projetos
-import imageHooked from '../../assets/img/project/hooked.jpg';
-import imageBrocolli from '../../assets/img/project/broccoli.jpg';
-import imageBlockar from '../../assets/img/project/blockar.jpeg';
-import imageChaotic from '../../assets/img/project/chaotic.jpg';
-import imageTooMuch from '../../assets/img/project/toomuch.jpg';
-import imageTransitandoLegal from '../../assets/img/project/transitolegal.webp';
-import imageItauRunner from '../../assets/img/project/itaurunner.webp';
-import imageMeuMalvadoFav from '../../assets/img/project/malvadoFav.webp';
-import imageTimMapa from '../../assets/img/project/timMapa.jpg';
-import imageTimOrgulho from '../../assets/img/project/diaOrgulho.webp';
-import imageDiveb from '../../assets/img/project/diveb.png';
-import imageTimBlackFriday from '../../assets/img/project/timBlackFriday.png';
-import imagefonteOuro from '../../assets/img/project/fonteOuro.jpg';
-import imagecafeAioros from '../../assets/img/project/cafeAioros.jpg';
+import imageBroccolis from '../../assets/img/project/BroccolisAscension.png';
+// import imageEducacaoTransito from '../../assets/img/project/EducacaoTransito.png';
+// import imageLetalShot from '../../assets/img/project/LetalShot.png';
+// import imageLevelDesignProject from '../../assets/img/project/LevelDesignProject.png';
+// import imageMonsterDelivery from '../../assets/img/project/MonsterDelivery.png';
+// import imagePotioning from '../../assets/img/project/Potioning.png';
+import imageSolis from '../../assets/img/project/Solis.png';
+// import imageSustainability from '../../assets/img/project/Sustainability.png';
+// import imageTooMuchWork from '../../assets/img/project/TooMuchWork.png';
 
 
 const allProjectsData = [
-    { id: 1, path: 'https://play.google.com/store/apps/details?id=com.Aioros.TLDigital&hl=pt_BR', title: 'Transitando Legal Digital', category: 'Aioros Studios', image: imageTransitandoLegal, tags: ['Unity', 'Android/iOS', 'Educational'], type: 'professional' },
-    { id: 2, path: 'https://store.steampowered.com/app/3997950/Hooked/', title: 'Hooked', category: 'Indie', image: imageHooked, tags: ['Unity', 'Windows', 'Linux'], type: 'personal' },
-    { id: 3, path: 'https://mamacabra.itch.io/blockar', title: 'Blockar ', category: 'Indie', image: imageBlockar, tags: ['Unity', 'Windows', 'Linux'], type: 'personal' },
-    { id: 4, path: 'https://mamacabra.itch.io/chaoticsea', title: 'Chaotic Sea', category: 'Indie', image: imageChaotic, tags: ['Unity', 'Windows', 'Linux'], type: 'personal' },
-    { id: 5, path: 'https://giovana-melo.itch.io/too-much-work-for-only-one-godess', title: 'Too Much Work For Only One Godess', category: 'Game Jam', image: imageTooMuch, tags: ['Construct', 'Windows', 'Linux'], type: 'personal' },
-    { id: 6, path: 'https://giovana-melo.itch.io/brocolli', title: 'Brocolli ', category: 'Game Jam', image: imageBrocolli, tags: ['Construct', 'Windows', 'Linux'], type: 'personal' },
-    { id: 7, path: 'https://drive.google.com/file/d/1TeISWDMRWdXyG_1ntQQTxJAHQrSaIXkX/view?usp=sharing', title: 'Itaú Runner ', category: 'Aioros Studios', image: imageItauRunner, tags: ['Unity', 'Phygital'], type: 'professional' },
-    { id: 8, path: 'https://drive.google.com/file/d/19iqXeNrILq1pDC6wQ42d2_sBb4UX82qZ/view?usp=sharing', title: 'Campanha Meu Malvado Favorito 4', category: 'Aioros Studios', image: imageMeuMalvadoFav, tags: ['Unity', 'Phygital'], type: 'professional' },
-    { id: 9, path: 'https://drive.google.com/file/d/1bdJkud8-iZHSIhJ93q2FBxRi-6ZScyud/view?usp=sharing', title: 'Tim Dia do Orgulho Nerd', category: 'Aioros Studios', image: imageTimOrgulho, tags: ['Unity', 'Phygital'], type: 'professional' },
-    { id: 10, path: 'https://drive.google.com/file/d/1ERE4YnOgKc3QG0Asa8Li6amVI-kMwEOI/view?usp=sharing', title: 'Tim Mapa Interativo', category: 'Aioros Studios', image: imageTimMapa, tags: ['Unity', 'Phygital'], type: 'professional' },
-    { id: 11, path: 'https://drive.google.com/file/d/1hZLAMKMcvmLr7XEQFE2NqvefhXRpH4c9/view?usp=sharing', title: 'Jogos Educativos Bernoulli', category: 'Aioros Studios', image: imageDiveb, tags: ['Unity', 'PC', 'Educational'], type: 'professional' },
-    { id: 12, path: 'https://drive.google.com/file/d/1gY_kbKFIFmwMIyEKz9Qzw-Rt1v4YHSf4/view?usp=sharing', title: 'Tim Black Friday', category: 'Aioros Studios', image: imageTimBlackFriday, tags: ['Unity', 'Phygital'], type: 'professional' },
-    { id: 13, path: 'https://drive.google.com/file/d/1idGE-0z4tB4uDBrNIU1OrG7gb7PIBz2L/view?usp=sharing', title: 'Banco do Brasil - Fonte de Ouro', category: 'Aioros Studios', image: imagefonteOuro, tags: ['Unity', 'Phygital'], type: 'professional' },
-    { id: 14, path: 'https://drive.google.com/file/d/1lXTRqFogZmb2u8Hi9R2wTRbFdTwhHReL/view?usp=sharing', title: 'Aioros Café', category: 'Aioros Studios', image: imagecafeAioros, tags: ['Unity', 'Phygital'], type: 'professional' },
+    { id: 1, path: 'https://giovana-melo.itch.io/brocolli', title: "Broccoli's Ascension", category: 'GAMinG Jam 2021', image: imageBroccolis, tags: ['Construct', 'Play in Browser', 'Pixel Art', 'Retro'], type: 'personal' },
+    { id: 1, path: 'https://solis.buffbuffstudios.com/', title: "Solis", category: 'Buff Buff Studio', image: imageSolis, tags: ['Unity', 'Windows', 'Puzzle', 'Platformer'], type: 'professional' },
 ];
 
 const ProjectsPage = () => {
@@ -67,10 +50,10 @@ const ProjectsPage = () => {
                     <h1 className="header-title-projectsAll">{texts.TitlePage_ProjectsProfessional}</h1>
                     <div className="header-divider-projectsAll"/>
                 </div>
-                <div className="header-link-projectsAll">
-                    <a  className="text-link-projectsAll" href="https://www.aioros.com.br/#Cases" target="_blank" rel="noopener noreferrer">Projetos Aioros Studios</a>
+                {/* <div className="header-link-projectsAll">
+                    <a  className="text-link-projectsAll" href="" target="_blank" rel="noopener noreferrer">Projetos Aioros Studios</a>
                     <img className="icon-link-projectsAll" src={iconLink} alt="icone link" />
-                </div>
+                </div> */}
                 <div className="projectsAll-grid">
                     {professionalProjects.map(project => (
                         <a 

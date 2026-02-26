@@ -1,0 +1,15 @@
+.btn-social-footer {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    height: 50px;
+}
+
+.btn-social-footer img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.btn-social-footer :hover {
+    opacity: 0.8;
+}

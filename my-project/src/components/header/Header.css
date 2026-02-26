@@ -80,7 +80,7 @@
 .header-logo, 
 .nav-option {
     color: var(--color-button-solidHeader) !important;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .header.scrolled .header-logo,
@@ -100,15 +100,17 @@
     color: var(--color-button-scrolledHeader) !important;
 }
 
-.nav-option:hover {
-    color: var(--color-hoverButton-solidHeader) !important; 
+.header-logo:hover, .nav-option:hover {
+    color: var(--color-hoverButton-solidHeader) !important;
+    transform: scale(1.08);
 }
 
 .header.scrolled .header-logo:hover,
 .header-solid .header-logo:hover,
 .header.scrolled .nav-option:hover,
 .header-solid .nav-option:hover {
-    color: var(--color-hoverButton-scrolledHeader) !important; 
+    color: var(--color-hoverButton-scrolledHeader) !important;
+    transform: scale(1.08);
 }
 
 
